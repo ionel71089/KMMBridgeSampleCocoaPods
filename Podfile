@@ -1,11 +1,13 @@
 platform :ios, '13'
 
-source 'https://github.com/touchlab/PublicPodspecs.git'
+$use_local_kotlin = false
+
+source 'git@github.com:ionel71089/PublicPodspecs.git'
 
 target 'KMMBridgeSampleCocoaPods' do
-  if ENV.include?("LOCAL_KOTLIN_PATH")
-    pod 'shared', :path => ENV["LOCAL_KOTLIN_PATH"]
+  if $use_local_kotlin
+    pod 'shared', :path => '../KMMBridgeSampleKotlin/shared/shared.podspec'
   else
-    pod 'shared', '~> 0.5.0'
+    pod 'shared', '~> 0.8.5'
   end
 end
