@@ -8,6 +8,6 @@ target 'KMMBridgeSampleCocoaPods' do
   if $use_local_kotlin
     pod 'shared', :path => '../KMMBridgeSampleKotlin/shared/shared.podspec'
   else
-    pod 'shared', '~> 0.8.5'
+    pod 'shared', '~> 0.8.9'
   end
 end

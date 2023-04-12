@@ -9,10 +9,18 @@ import SwiftUI
 import shared
 
 struct ContentView: View {
+    @State private var kotlinString: String = ""
+    
     var body: some View {
-        let kotlinString = Shared().getString()
         Text(kotlinString)
             .padding()
+            .task {
+                Shared().getString { string, error in
+                    if let string {
+                        self.kotlinString = string
+                    }
+                }
+            }
     }
 }
 

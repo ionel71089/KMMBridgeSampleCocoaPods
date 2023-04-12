@@ -1,16 +1,16 @@
 PODS:
-  - shared (0.8.6)
+  - shared (0.8.9)
 
 DEPENDENCIES:
-  - shared (~> 0.8.5)
+  - shared (~> 0.8.9)
 
 SPEC REPOS:
   "git@github.com:ionel71089/PublicPodspecs.git":
     - shared
 
 SPEC CHECKSUMS:
-  shared: 3d0c1f057eadafe5d42da01d0d1b42cb5c4cd79c
+  shared: 2949bdc5476b32b7653451f0a643f49a7fc553a6
 
-PODFILE CHECKSUM: 14405391de2850ac9162ebc97149dba5d4a417bd
+PODFILE CHECKSUM: 4dd6687ff853f1b37cad7f60c43982d8a634ffd4
 
 COCOAPODS: 1.12.0
